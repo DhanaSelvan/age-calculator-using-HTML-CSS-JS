@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator using Javascript</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="bg-pink-500 px-5 md:px-40">
+        <h1 class="text-3xl font-bold py-5 text-pink-50">Age Calculator</h1>
+    </header>
+    <section class="px-5 md:px-40">
+        <div class="my-7 bg-violet-100 py-5 rounded-lg flex flex-col gap-6 justify-center items-center">
+            <fieldset>
+                <label for="dob">Date of Birth</label><br>
+                <input type="date" class="px-4 py-2 rounded-lg mt-3" id="dob">
+                <button class="bg-pink-500 px-4 py-2 ms-4 rounded-lg text-white hover:bg-pink-600" onclick="calculate()">Calculate</button>
+            </fieldset>
+            <div id="age-wrapper">
+                <h3 class="text-xl font-semibold">Your Age is <span id="age" class="text-pink-500 text-2xl font-bold">00</span></h3>
+            </div>
+        </div>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+</html>
